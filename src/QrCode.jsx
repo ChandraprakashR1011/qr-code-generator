@@ -29,6 +29,8 @@ export const QrCode=()=>{
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link)
+        }).catch((error)=>{
+            console.error("Error downloading QR code",error);
         });
     }
     
